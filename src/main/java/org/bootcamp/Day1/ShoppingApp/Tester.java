@@ -1,4 +1,5 @@
-package org.bootcamp.Day1.Bank.ShoppingApp;
+package org.bootcamp.Day1.ShoppingApp;
+
 
 public class Tester {
 
