@@ -1,4 +1,4 @@
-package org.bootcamp;
+package org.bootcamp.Day1;
 
 public class Employee {
     private String employeeID;

@@ -31,27 +31,27 @@ public class BufferDemo {
 
 //        Scattered Read: Read data from single channel into multiple buffers
 //        Gathering Writes: Writing from multiple buffer
-        FileChannel channel = null;
-        try {
-            channel = new FileInputStream("test.txt").getChannel();
-        var buffer1 = ByteBuffer.allocate(48);
-            var buffer2 = ByteBuffer.allocate(48);
-            var bufferArr = new ByteBuffer[]{buffer1, buffer2};
-            try {
-                channel.read(bufferArr); //Scattered Read
-                channel.write(bufferArr); //Gathering Writes
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            } finally {
-                try {
-                    channel.close();
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+//        FileChannel channel = null;
+//        try {
+//            channel = new FileInputStream("test.txt").getChannel();
+//        var buffer1 = ByteBuffer.allocate(48);
+//            var buffer2 = ByteBuffer.allocate(48);
+//            var bufferArr = new ByteBuffer[]{buffer1, buffer2};
+//            try {
+//                channel.read(bufferArr); //Scattered Read
+//                channel.write(bufferArr); //Gathering Writes
+//            } catch (IOException e) {
+//                throw new RuntimeException(e);
+//            } finally {
+//                try {
+//                    channel.close();
+//                } catch (IOException e) {
+//                    throw new RuntimeException(e);
+//                }
+//            }
+//        } catch (FileNotFoundException e) {
+//            throw new RuntimeException(e);
+//        }
 
 //
     }
